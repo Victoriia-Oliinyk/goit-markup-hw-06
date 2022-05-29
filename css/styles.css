@@ -251,7 +251,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -341,6 +341,7 @@ body {
 
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------------------- Форма модального окна -----------------*/
@@ -370,14 +371,12 @@ body {
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus ~ .icon-modal {
   fill: var(--accent-color);
 }
 .form-input:focus {
   border: 1px solid var(--accent-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .form-labal {
@@ -462,7 +461,6 @@ body {
 }
 .textarea-form:focus {
   outline: transparent;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .textarea-form::placeholder {
   font-size: 14px;
@@ -811,6 +809,9 @@ body {
 }
 .footer-social-link {
   display: flex;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -875,14 +876,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-nav .link:hover,
-.footer-nav .link:focus {
+.footer-social-link .link:hover,
+.footer-social-link .link:focus {
   color: var(--accent-color);
 }
 
@@ -899,6 +896,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  padding-left: 0;
 }
 .container-right-text {
   display: block;
@@ -922,6 +920,17 @@ body {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  outline: none;
+}
+
+.footer-input:focus {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input::not(placeholder) {
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-forma-button {
   padding-top: 10px;
@@ -931,6 +940,7 @@ body {
   display: flex;
   min-width: 200px;
   height: 50px;
+  cursor: pointer;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -960,9 +970,6 @@ body {
   display: flex;
 }
 .footer-btn {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   display: inline-block;
   fill: var(--hero-title-color);
 }
@@ -970,8 +977,6 @@ body {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 /* ------------------------Стили для ПОРТФОЛИО ----------------*/
 
@@ -1101,7 +1106,6 @@ body {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(101%);
- 
 }
 
 .link-filtrs-box:hover .overlay-card,
