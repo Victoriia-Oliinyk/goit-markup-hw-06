@@ -17,32 +17,32 @@
   <body class="page">
     <!--Шапка-->
 
-    <header class="header-page">
-      <div class="container header-nav">
-        <nav class="nav">
-          <a href="index.html" class="logo header-link-size" lang="en"
-            >Web<span class="logo-header">Studio</span></a
+    <header class="header">
+      <div class="container header__page header__container">
+        <nav class="header__nav">
+          <a href="index.html" class="logo logo__header-size" lang="en"
+            >Web<span class="logo__header-accent">Studio</span></a
           >
 
-          <ul class="site-nav list">
-            <li class="nav-item">
-              <a href="./index.html" class="link navigation-link">Студия</a>
+          <ul class="header-menu list">
+            <li class="header-menu__item">
+              <a href="./index.html" class="header-menu__link link">Студия</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="navigation-link link current"
+            <li class="header-menu__item">
+              <a href="#portfolio" class="header-menu__link link header-menu__current current"
                 >Портфолио</a
               >
             </li>
-            <li class="nav-item">
-              <a href="#contacts" class="link navigation-link">Контакты</a>
+            <li class="header-menu__item">
+              <a href="#contacts" class="header-menu__link link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="auth-nav list">
-          <li class="auth-item">
-            <a class="link contact-icons mail" href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16px" height="12px">
+        <ul class="header-contacts list">
+          <li class="header-contacts__item">
+            <a class="link header-contacts__icons" href="mailto:info@devstudio.com"
+              ><svg class="header-contacts__icon" width="16px" height="12px">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
                 ></use>
@@ -50,13 +50,13 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-item">
+          <li class="header-contacts__item">
             <a
-              class="link contact-icons tel"
+              class="link header-contacts__icons"
               href="tel:+380961111111"
-              class="link contact-icons"
+              
             >
-              <svg class="contact-icon" width="10px" height="16px">
+              <svg class="header-contacts__icon" width="10px" height="16px">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
                 ></use>
@@ -74,27 +74,27 @@
           <h1 class="visually-hidden">Наши работы</h1>
 
           <ul class="filtrs list">
-            <li class="filtrs-item">
-              <button type="button" class="btn current">Все</button>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__btn filtrs__current">Все</button>
             </li>
-            <li class="filtrs-item">
-              <button type="button" class="btn">Веб-сайты</button>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__btn">Веб-сайты</button>
             </li>
-            <li class="filtrs-item">
-              <button type="button" class="btn">Приложения</button>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__btn">Приложения</button>
             </li>
-            <li class="filtrs-item">
-              <button type="button" class="btn">Дизайн</button>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__btn">Дизайн</button>
             </li>
-            <li class="filtrs-item">
-              <button type="button" class="btn">Маркетинг</button>
+            <li class="filtrs__item">
+              <button type="button" class="filtrs__btn">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="link-filtrs list">
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href="">
-                <div class="overlay-blok">
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a class="gallery__box" href="">
+                <div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-1.jpg"
@@ -102,8 +102,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -111,15 +111,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">Технокряк</h2>
-                  <p class="text-box">Веб-сайт</p>
+                <div class="gallery__description">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__name">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href="">
-                <div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href="">
+                <div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-2.jpg"
@@ -127,8 +127,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -136,17 +136,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Постер <span lang="en">Orlean vs Golden Star</span>
                   </h2>
-                  <p class="text-box">Дизайн</p>
+                  <p class="gallery__name">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href="">
-                <div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href="">
+                <div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-3.jpg"
@@ -154,8 +154,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -163,34 +163,18 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="text-box">Приложение</p>
+                  <p class="gallery__name">Приложение</p>
                 </div></a
               >
             </li>
-            <!-- <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><img
-                  class="image"
-                  src="./images/homework-two/img-3.jpg"
-                  alt="логотип рыбного ресторана"
-                  width="370"
-                  height="294"
-                />
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
-                    Ресторан <span lang="en">Seafood</span>
-                  </h2>
-                  <p class="text-box">Приложение</p>
-                </div></a
-              >
-            </li> -->
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href="">
-                <div class="overlay-blok">
+           
+            <li class="gallery__item">
+              <a class="gallery__box" href="">
+                <div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-4.jpg"
@@ -198,8 +182,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -207,17 +191,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Проект <span lang="en">Prime</span>
                   </h2>
-                  <p class="text-box">Маркетинг</p>
+                  <p class="gallery__name">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href=""
+                ><div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-5.jpg"
@@ -225,8 +209,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -234,17 +218,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Проект <span lang="en">Boxes</span>
                   </h2>
                   <p class="text-box">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href=""
+                ><div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-6.jpg"
@@ -252,8 +236,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -261,17 +245,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs" lang="en">
+                <div class="gallery__description">
+                  <h2 class="gallery__title" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="text-box">Веб-сайт</p>
+                  <p class="gallery__name">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href=""
+                ><div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-7.jpg"
@@ -279,8 +263,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -288,17 +272,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Издание <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="text-box">Дизайн</p>
+                  <p class="gallery__name">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href=""
+                ><div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-8.jpg"
@@ -306,8 +290,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -315,17 +299,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs">
+                <div class="gallery__description">
+                  <h2 class="gallery__title">
                     Проект <span lang="en">LAB</span>
                   </h2>
-                  <p class="text-box">Маркетинг</p>
+                  <p class="gallery__name">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="filtrs-box">
-              <a class="link-filtrs-box" href=""
-                ><div class="overlay-blok">
+            <li class="gallery__item">
+              <a class="gallery__box" href=""
+                ><div class="gallery__blok">
                   <img
                     class="image"
                     src="./images/homework-two/img-9.jpg"
@@ -333,8 +317,8 @@
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
-                    <p class="overlay-text">
+                  <div class="gallery__card">
+                    <p class="gallery__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -342,9 +326,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="text-card">
-                  <h2 class="link-title-filtrs" lang="en">Growing Business</h2>
-                  <p class="text-box">Приложение</p>
+                <div class="gallery__description">
+                  <h2 class="gallery__title" lang="en">Growing Business</h2>
+                  <p class="gallery__name">Приложение</p>
                 </div></a
               >
             </li>
