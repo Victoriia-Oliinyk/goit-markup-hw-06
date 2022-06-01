@@ -321,7 +321,7 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: visibility;
+  transition-property: visibility, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -334,7 +334,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  padding: 40px;
   width: 528px;
 
   background-color: var(--background-body-color);
@@ -344,13 +344,12 @@ body {
 
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------------------- Форма модального окна -----------------*/
-.modal-main {
-  padding: 40px;
-}
+
 .modal-text {
   margin-bottom: 12px;
   display: block;
@@ -619,8 +618,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding-top: 27px;
-  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
   color: var(--hero-title-color);
 
@@ -726,12 +725,12 @@ body {
 }
 
 /*---------------------- Постоянные клиенты------------------------------- */
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.link-client {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,23 +743,23 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-icon {
+.clients__icon {
   fill: var(--icon-color);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-logo:not(:last-child) {
+.clients__logo:not(:last-child) {
   margin-right: 30px;
 }
-.link-client:hover .client-icon,
-.link-client:focus .client-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
-.link-client:hover,
-.link-client:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -777,7 +776,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-social {
@@ -827,6 +826,10 @@ body {
   align-items: center;
 }
 .footer-social-link {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   display: flex;
   transition-property: color;
   transition-duration: 250ms;
@@ -834,16 +837,15 @@ body {
   color: var(--hero-title-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-social-icon:hover,
+.footer-social-icon:focus {
   background-color: var(--accent-color);
 }
 
 .footer-social-icon {
   fill: currentColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
