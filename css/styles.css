@@ -499,7 +499,7 @@ body {
   background-color: var(--accent-color);
 border: 2px solid var(--accent-color);
 }
-.custom-checkbox:focus {
+checkbox:focus {
   background-color: var(--accent-color);
 border: 2px solid var(--accent-color);
 }
