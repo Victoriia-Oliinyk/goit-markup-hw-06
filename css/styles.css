@@ -504,11 +504,7 @@ border: 2px solid var(--accent-color);
 border: 2px solid var(--accent-color);
 fill: #ffffff;
 }
-.custom-checkbox:hover {
- 
-  border: 2px solid var(--accent-color);
-  fill: #ffffff;
-}
+
 
 .custom-checkbox-icon {
   fill: #ffffff;
