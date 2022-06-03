@@ -489,7 +489,7 @@ body {
   justify-content: center;
 fill: #ffffff;
   border-radius: 4px;
-  
+  outline: none;
   border: 2px solid var(--title-text-color);
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -503,6 +503,11 @@ border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
 border: 2px solid var(--accent-color);
 fill: #ffffff;
+}
+.custom-checkbox:hover {
+ 
+  border: 2px solid var(--accent-color);
+  fill: #ffffff;
 }
 
 .custom-checkbox-icon {
