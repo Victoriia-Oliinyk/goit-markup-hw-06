@@ -506,15 +506,11 @@ fill: #ffffff;
 }
 
 
-.custom-checkbox-icon {
-  fill: #ffffff;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.checkbox:checked + .custom-checkbox .custom-checkbox-icon {
+
+ .checkbox:checked + .custom-checkbox .custom-checkbox-icon {
   opacity: 1;
-}
+} 
 
 .form-policy-desc {
   font-size: 14px;
@@ -600,18 +596,18 @@ fill: #ffffff;
 .work {
   padding-top: 0px;
 }
-.work-list {
+.work__list {
   display: flex;
 }
-.work-item {
+.work__item {
   position: relative;
 
   margin-right: 30px;
 }
-.work-item:last-child {
+.work__item:last-child {
   margin-right: 0;
 }
-.work-text {
+.work__text {
   position: absolute;
   bottom: 0;
   right: 0;
