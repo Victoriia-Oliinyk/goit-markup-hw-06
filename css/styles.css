@@ -497,7 +497,7 @@ body {
   overflow: hidden;
 }
 
-.checkbox:checked+.custom-checkbox {
+.checkbox:checked:focus + .custom-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
